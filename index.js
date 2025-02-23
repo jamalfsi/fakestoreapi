@@ -6,6 +6,7 @@ const port = process.env.port || 8000
 app.use(cors())
 // console.log(process.env.port) // remove this after you've confirmed it is working
 const {readdirSync} = require("fs")
+
 readdirSync("./routes").map((file) => app.use("/", require(`./routes/${file}`)))
 
 
