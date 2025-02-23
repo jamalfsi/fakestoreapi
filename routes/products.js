@@ -4,7 +4,7 @@ const router = express.Router()
 const productData = [
     {
       _id: 1,
-      title: "Long sleeve Jacket",
+      title: "jamal product1",
       isNew: true,
       oldPrice: "200",
       price: 150,
